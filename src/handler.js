@@ -42,7 +42,7 @@ const addBookHandler = (request, h) => {
     return response("success", "Buku berhasil ditambahkan", 201, { bookId: id });
   }
 
-  return response("error", "Buku gagal ditambahkan", 500);
+  return response("error", "Buku gagal ditambah", 500);
 };
 
 /*========
