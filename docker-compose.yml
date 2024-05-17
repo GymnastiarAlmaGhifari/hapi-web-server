@@ -1,0 +1,10 @@
+version: "3"
+
+services:
+  app:
+    container_name: hapi
+    image: gymnastiarag123/hapi:latest
+    network_mode: bridge
+    ports:
+      - 3000:3000
+    restart: unless-stopped
