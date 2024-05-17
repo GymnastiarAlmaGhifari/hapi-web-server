@@ -14,7 +14,7 @@ COPY --from=builder /app/package.json /app/package-lock.json ./
 COPY --from=builder /app/node_modules ./node_modules
 COPY --from=builder /app/src ./src
 
-EXPOSE 9000
+EXPOSE 3000
 
 CMD ["npm", "start"]
 
