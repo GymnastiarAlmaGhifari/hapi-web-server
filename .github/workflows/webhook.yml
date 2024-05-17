@@ -1,0 +1,21 @@
+name: webhook
+
+on:
+    workflow_run:
+      workflows: ["docker build"]
+      types:
+        - completed
+
+permissions:
+  contents: read
+  packages: write
+
+jobs:
+  webhook:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Webhook
+        uses: zzzze/webhook-trigger@master
+        with:
+          data: "{\"event_type\":\"build\"}"
+          webhook_url: ${{ secrets.WEBHOOK_URL }}
