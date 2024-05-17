@@ -33,6 +33,6 @@ jobs:
         with:
           context: .
           push: true
-          tags:
-            - gymnastiarag123/hapi:latest,
-            - gymnastiarag123/hapi:${{ env.VER_TAG }}
+          tags: |
+            gymnastiarag123/hapi:latest,
+            gymnastiarag123/hapi:${{ env.VER_TAG }}
