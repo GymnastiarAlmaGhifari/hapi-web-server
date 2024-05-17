@@ -35,4 +35,4 @@ jobs:
           push: true
           tags:
             - gymnastiarag123/hapi:latest,
-            - gymnastiarag123/hapi:some-tag
+            - gymnastiarag123/hapi:${{ env.VER_TAG }}
