@@ -1,6 +1,6 @@
 const Hapi = require("@hapi/hapi");
 const routes = require("./routes");
-// dockerfile
+// dockerfile ganti
 
 const init = async () => {
   const server = Hapi.server({
